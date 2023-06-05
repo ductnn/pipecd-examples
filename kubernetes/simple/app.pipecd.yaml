@@ -1,10 +1,11 @@
 apiVersion: pipecd.dev/v1beta1
 kind: KubernetesApp
 spec:
-  name: simple
+  name: duma
   labels:
     env: move
     team: product
+    mb: vcl
   input:
     manifests:
       - deployment.yaml
