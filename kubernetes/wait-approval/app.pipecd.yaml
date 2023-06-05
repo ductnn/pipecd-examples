@@ -1,10 +1,11 @@
 apiVersion: pipecd.dev/v1beta1
 kind: KubernetesApp
 spec:
-  name: wait-approval
+  name: wait-approval-duma
   labels:
-    env: example
+    env: move
     team: product
+    truyensong: angten
   pipeline:
     stages:
       - name: K8S_CANARY_ROLLOUT
