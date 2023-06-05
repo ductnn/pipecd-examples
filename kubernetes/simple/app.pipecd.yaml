@@ -3,7 +3,7 @@ kind: KubernetesApp
 spec:
   name: simple
   labels:
-    env: example
+    env: move
     team: product
   input:
     manifests:
