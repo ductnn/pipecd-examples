@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: canary
+  name: canary-dummy
   namespace: duma
   labels:
-    app: canary
+    app: canary-dummy
 spec:
   replicas: 2
   revisionHistoryLimit: 2
   selector:
     matchLabels:
-      app: canary
+      app: canary-dummy
       pipecd.dev/variant: primary
   template:
     metadata:
       labels:
-        app: canary
+        app: canary-dummy
         pipecd.dev/variant: primary
     spec:
       containers:
